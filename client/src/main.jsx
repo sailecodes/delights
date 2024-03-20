@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import "./assets/scss/partials/_default.scss";
+import "./assets/scss/_default.scss";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

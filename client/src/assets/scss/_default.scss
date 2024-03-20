@@ -4,7 +4,6 @@
 
 :root {
   // --color-sidebar-overlay: rgba(0, 0, 0, 0.5);
-
   // --color-gray: #7e7e7e;
   // --color-gray-white: #d1d1d1;
   // --color-black: #222;
@@ -29,10 +28,6 @@ body {
   background-color: var(--color-white);
 
   font-family: "Poppins", sans-serif;
-}
-
-body.no-scroll {
-  overflow: hidden;
 }
 
 /* ============================================== */
