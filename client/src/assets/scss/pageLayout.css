@@ -26,4 +26,7 @@
 .page-layout--container .page-layout--nav button {
   color: #e493b3;
   font-size: 2rem;
+}
+.page-layout--container .page-layout--nav a.active {
+  color: #8e7ab5;
 }/*# sourceMappingURL=pageLayout.css.map */

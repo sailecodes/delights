@@ -1,0 +1,41 @@
+@use "./../scss/mixins" as *;
+@use "./../scss/variables" as vars;
+
+.favorites--container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  padding: 4rem;
+
+  .favorites--item {
+    background-color: vars.$color-accent-1;
+    color: vars.$color-white;
+
+    padding: 2rem;
+    border-radius: 8px;
+
+    .favorites--item-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+
+      p {
+        font-size: vars.$font-subheading-sm;
+      }
+
+      margin-bottom: 1rem;
+    }
+
+    .favorites--item-name {
+      font-size: vars.$font-heading-sm;
+    }
+
+    .favorites--item-details li {
+      list-style-position: inside;
+
+      font-size: vars.$font-regular-sm;
+    }
+  }
+}

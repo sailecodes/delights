@@ -34,5 +34,9 @@
       color: vars.$color-primary;
       font-size: vars.$font-subheading-sm;
     }
+
+    a.active {
+      color: vars.$color-accent-3;
+    }
   }
 }

@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import "./../scss/pageLayout.scss";
 
 const PageLayout = () => {
@@ -11,9 +11,13 @@ const PageLayout = () => {
       <header className="page-layout--header">Delights</header>
       <Outlet />
       <nav className="page-layout--nav">
-        <Link to="/dashboard">Home</Link>
-        <Link to="/dashboard/favorites">Favorites</Link>
-        <Link to="/dashboard/stores">Stores</Link>
+        <NavLink
+          to="/dashboard"
+          end>
+          Home
+        </NavLink>
+        <NavLink to="/dashboard/favorites">Favorites</NavLink>
+        <NavLink to="/dashboard/stores">Stores</NavLink>
         <button onClick={onLogout}>Logout</button>
       </nav>
     </main>
