@@ -1,0 +1,27 @@
+@use "./../scss/mixins" as *;
+@use "./../scss/variables" as vars;
+
+.home--container {
+  @include flex-center-col(0rem);
+
+  position: relative;
+
+  .home--stats {
+    @include flex-center-col(1rem);
+
+    position: relative;
+    z-index: 50;
+
+    scale: 1;
+
+    background-color: vars.$color-accent-1;
+    color: vars.$color-white;
+
+    width: 30rem;
+    height: 30rem;
+
+    font-size: vars.$font-heading-sm;
+
+    border-radius: 50%;
+  }
+}

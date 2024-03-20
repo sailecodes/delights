@@ -2,12 +2,17 @@
 @use "./../scss/variables" as vars;
 
 .page-layout--container {
+  position: relative;
+
   display: grid;
   grid-template-rows: 6rem 1fr 6rem;
 
   height: 100vh;
 
   .page-layout--header {
+    position: relative;
+    z-index: 51;
+
     color: vars.$color-primary;
 
     font-size: vars.$font-heading-sm;
@@ -20,6 +25,9 @@
 
   .page-layout--nav {
     @include flex-center-row(2.4rem);
+
+    position: relative;
+    z-index: 51;
 
     a,
     button {

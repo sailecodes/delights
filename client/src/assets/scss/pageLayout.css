@@ -1,9 +1,12 @@
 .page-layout--container {
+  position: relative;
   display: grid;
   grid-template-rows: 6rem 1fr 6rem;
   height: 100vh;
 }
 .page-layout--container .page-layout--header {
+  position: relative;
+  z-index: 51;
   color: #e493b3;
   font-size: 3.1rem;
   font-weight: 600;
@@ -16,6 +19,8 @@
   align-items: center;
   justify-content: center;
   gap: 2.4rem;
+  position: relative;
+  z-index: 51;
 }
 .page-layout--container .page-layout--nav a,
 .page-layout--container .page-layout--nav button {
