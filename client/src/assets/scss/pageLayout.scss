@@ -1,0 +1,30 @@
+@use "./../scss/mixins" as *;
+@use "./../scss/variables" as vars;
+
+.page-layout--container {
+  display: grid;
+  grid-template-rows: 6rem 1fr 6rem;
+
+  height: 100vh;
+
+  .page-layout--header {
+    color: vars.$color-primary;
+
+    font-size: vars.$font-heading-sm;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+
+    padding: 1rem 2rem;
+  }
+
+  .page-layout--nav {
+    @include flex-center-row(2.4rem);
+
+    a,
+    button {
+      color: vars.$color-primary;
+      font-size: vars.$font-subheading-sm;
+    }
+  }
+}

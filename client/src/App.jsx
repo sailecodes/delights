@@ -1,9 +1,10 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-import PageLayout from "./assets/components/PageLayout";
 import Login from "./assets/components/Login";
 import Register from "./assets/components/Register";
+import PageLayout from "./assets/components/PageLayout";
+import Home from "./assets/components/Home";
 
 const queryClient = new QueryClient();
 const router = createBrowserRouter([
@@ -18,7 +19,12 @@ const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <PageLayout />,
-    children: [{}],
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+    ],
   },
 ]);
 

@@ -1,0 +1,24 @@
+.page-layout--container {
+  display: grid;
+  grid-template-rows: 6rem 1fr 6rem;
+  height: 100vh;
+}
+.page-layout--container .page-layout--header {
+  color: #e493b3;
+  font-size: 3.1rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+}
+.page-layout--container .page-layout--nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+.page-layout--container .page-layout--nav a,
+.page-layout--container .page-layout--nav button {
+  color: #e493b3;
+  font-size: 2rem;
+}/*# sourceMappingURL=pageLayout.css.map */

@@ -53,12 +53,12 @@
 .auth--container .auth--main .auth--text p:nth-child(1) {
   margin-bottom: 0.2rem;
 }
-.auth--container .auth--main .auth--text p a,
-.auth--container .auth--main .auth--text button {
-  color: #8e7ab5;
-}
 .auth--container .auth--main .auth--text p {
   color: #e493b3;
   text-align: center;
   font-size: 1.4rem;
+}
+.auth--container .auth--main .auth--text p a,
+.auth--container .auth--main .auth--text button {
+  color: #8e7ab5;
 }/*# sourceMappingURL=auth.css.map */
