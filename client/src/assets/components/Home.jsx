@@ -7,8 +7,8 @@ const Home = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const updateIndex = (newIndex) => {
-    if (newIndex < 0) newIndex = 2;
-    else if (newIndex >= 3) newIndex = 0;
+    if (newIndex < 0) newIndex = 3;
+    else if (newIndex >= 4) newIndex = 0;
 
     setActiveIndex(newIndex);
   };
@@ -25,18 +25,24 @@ const Home = () => {
       </button>
       <div className="home--slider">
         <div style={{ transform: `translate(-${activeIndex * 100}%)` }}>
-          <p>7 stores</p>
-          <p>3 food</p>
-          <p>4 drinks</p>
+          <p>Welcome back, Lu!</p>
         </div>
         <div style={{ transform: `translate(-${activeIndex * 100}%)` }}>
           <p>
-            Your favorite drink is <br />
-            Boba
+            Did you know your favorite drink is <br />
+            <span>Boba</span>?
           </p>
         </div>
         <div style={{ transform: `translate(-${activeIndex * 100}%)` }}>
-          <p>Your go-to spot is Omomo</p>
+          <p>
+            Hmm, your belly always craves <br />
+            <span>Pho</span>.
+          </p>
+        </div>
+        <div style={{ transform: `translate(-${activeIndex * 100}%)` }}>
+          <p>
+            Guess what? Your go-to spot is <span> Omomo</span>!
+          </p>
         </div>
       </div>
       <button
